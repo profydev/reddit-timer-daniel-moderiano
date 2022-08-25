@@ -41,8 +41,7 @@ const GlobalStyles = createGlobalStyle`
   /** Bitter Regular **/
   @font-face {
     font-family: "Bitter";
-    src: url("/fonts/Bitter-Regular.woff2") format("woff2"),
-         url("/fonts/Bitter-Regular.woff") format("woff");
+    src: url("/fonts/Bitter-Regular.woff2") format("woff2"), url("/fonts/Bitter-Regular.woff") format("woff");
   }
 
   html, body, div, span, applet, object, iframe,
