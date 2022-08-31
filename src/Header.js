@@ -1,12 +1,50 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+
+export const StyledHeader = styled.header`
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+
+    .logo {
+      /* padding: 0;
+      margin: 0; */
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      
+      li {
+        padding-left: 25px;
+        height: 20px;
+      }
+    }
+  }
+`;
 
 function Header() {
   return (
-    <header>
-      Header Placeholder
+    <StyledHeader>
       <nav>
-        <div>
+        <div className="logo">
           <Link to="/">
             <svg width="149" height="36" viewBox="0 0 149 36" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="82.5643" cy="10.5623" r="1.93779" fill="#FF4500" />
@@ -22,12 +60,12 @@ function Header() {
           </Link>
         </div>
         <ul>
-          <li><Link to="/search">Search</Link></li>
+          <li><Link to="/search?query=javascript">Search</Link></li>
           <li><a href="#how-it-works">How it works</a></li>
           <li><a href="#about">About</a></li>
         </ul>
       </nav>
-    </header>
+    </StyledHeader>
   );
 }
 
