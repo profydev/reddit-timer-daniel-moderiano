@@ -17,9 +17,6 @@ export const StyledHeader = styled.header`
     padding: 0 80px;
 
     .logo {
-      /* padding: 0;
-      margin: 0; */
-
       a {
         display: flex;
         align-items: center;
@@ -30,11 +27,18 @@ export const StyledHeader = styled.header`
     ul {
       list-style: none;
       display: flex;
-      align-items: center;
+      /* align-items: center; */
       
       li {
         padding-left: 25px;
         height: 20px;
+        display: flex;
+        align-items: center;
+
+        a {
+          text-decoration: none;
+          color: #636363;
+        }
       }
     }
   }
